@@ -19,5 +19,3 @@ suites:
       name: "awspec"
       patterns:
       - "examples/test/awspec.rb"
-
-
