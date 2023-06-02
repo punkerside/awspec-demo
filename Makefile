@@ -25,4 +25,4 @@ test: parse
 	punkerside/titan-image-awspec:latest
 
 release:
-	docker run -e GITHUB_TOKEN=${GIT_TOKEN} -e GITHUB_REPO=$(shell echo "${GITHUB_REPOSITORY}" | cut -d "/" -f2) punkerside/titan-image-gh:latest
+	docker run -e GITHUB_TOKEN=${GIT_TOKEN} -e GH_TOKEN=${GIT_TOKEN} -e GITHUB_REPO=$(shell echo "${GITHUB_REPOSITORY}" | cut -d "/" -f2) punkerside/titan-image-gh:latest
