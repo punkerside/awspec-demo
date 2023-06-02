@@ -22,3 +22,6 @@ jobs:
 
     - name: Awspec
       run: make test
+
+    - name: Release
+      run: make release

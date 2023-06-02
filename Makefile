@@ -23,3 +23,6 @@ test: parse
 	  -e AWS_SESSION_TOKEN="${AWS_SESSION_TOKEN}" \
 	  -e AWS_DEFAULT_REGION="${AWS_DEFAULT_REGION}" \
 	punkerside/titan-image-awspec:latest
+
+release:
+	docker run -e GITHUB_TOKEN=${GIT_TOKEN} -e GITHUB_REPO=$(shell echo "${GITHUB_REPOSITORY}" | cut -d "/" -f2) punkerside/titan-image-gh:latest
