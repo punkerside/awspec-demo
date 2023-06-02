@@ -1,0 +1,8 @@
+.vscode/
+.terraform/
+terraform.tfstate.d/
+.terraform.d/
+.kitchen/
+Gemfile.lock
+passwd
+.terraform.lock.hcl
